@@ -1,0 +1,354 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+.lab51{
+	text-shadow: 2px 5px 5px deepskyblue;
+
+}
+
+.lab521{ 
+width:200px; 
+height:200px;
+background: red;
+border:3px solid black;
+border-radius:10px;
+}
+.lab522{ 
+width:200px; 
+height:200px;
+background: blue;
+border:3px solid black;
+border-radius:50px;
+}
+.lab523{ 
+width:200px; 
+height:200px;
+background: brown;
+border:3px solid black;
+border-radius:100px;
+}
+
+.lab531{ 
+width:200px; 
+height:200px;
+background: red;
+box-shadow:15px 15px 20px dimgrey;
+
+}
+.lab532{ 
+width:200px; 
+height:200px;
+background: blue;
+box-shadow:-15px -15px 30px dimgrey;
+}
+.lab533{ 
+width:200px; 
+height:200px;
+background: brown;
+box-shadow:15px 15px 10px dimgrey;
+}
+.lab511{
+	width:500px; 
+height:500px;
+background:linear-gradient(Red, Orange, Yellow, Green,
+Blue, Indigo, Violet);
+}
+.lab551{
+width:500px; 
+height:500px;
+background:linear-gradient(to top right, blue, red,orange);
+
+
+
+}
+
+.lab52main{
+display:flex;
+justify-content:space-between;
+margin-bottom:20px;
+
+}
+.lab54main{
+display:flex;
+justify-content:center;margin-bottom:20px;}
+
+
+.lab6{
+    width:200px; 
+height:200px;
+background-image: url('https://i1.trekearth.com/photos/90656/copy_of_dsc_0472.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+transition: 3s;
+margin-top: 40px;
+
+animation-name: animate;
+animation-direction: alternate-reverse;
+animation-duration: 10s;
+animation-fill-mode:forwards;
+animation-iteration-count: infinite;
+animation-play-state: running;
+animation-timing-function: ease-in-out;
+}
+@keyframes animate{
+    0%{
+
+        background-image: url('https://m.media-amazon.com/images/I/51r3I-PNK9L._AC_SS450_.jpg');
+    }
+    20%{
+
+        background-image: url('https://lite-images-i.scdn.co/image/ab67706c0000da8473ff8c2ef34fe94926ba1815');
+    }
+    40%{
+
+        background-image: url('https://liveonlineradio.net/wp-content/uploads/2018/01/Radio-Amra.jpg');
+    }
+    60%{
+
+        background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEEgZ9_AHkf804L3N04z1jXxb1WKeCwRtEJg&usqp=CAU');
+    }
+    80%{
+
+        background-image: url('https://3.imimg.com/data3/GR/UX/MY-10251099/img-20140425-wa0038-250x250.jpg');
+    }
+    100%{
+
+        background-image: url('https://i1.trekearth.com/photos/90656/copy_of_dsc_0472.jpg');
+    }
+
+
+
+}
+
+
+
+.lab552 {
+    -webkit-animation: rotation 2s infinite linear;
+    width:200px; 
+height:200px;
+margin-top:20px;
+	background:linear-gradient(to top right, blue, red,orange);
+}
+
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+
+
+
+     .skew .textbox
+      {
+        margin-left: 75px;
+        margin-top:20px;
+      	background:linear-gradient(to top right, blue, red,orange);
+        height: 100px;
+        width: 200px;
+        padding: 25px 0;
+        text-align: center;
+        font-size: 250%;
+        border-radius: 15px;
+        -webkit-animation: skew 3s infinite linear;
+        -moz-animation: skew 3s infinite linear;
+        animation: skew 3s infinite linear;
+        animation-direction: alternate;
+      }
+      @-webkit-keyframes skew
+      {
+        from { -webkit-transform: skewY(0deg); }
+        25% { -webkit-transform: skewY(30deg); }
+        50% { -webkit-transform: skewY(-30deg); }
+        75% { -webkit-transform: skewX(30deg); }
+        to { -webkit-transform: skewX(-30deg); }
+      }
+      @-moz-keyframes skew
+      {
+        from { -webkit-transform: skewY(0deg); }
+        25% { -webkit-transform: skewY(30deg); }
+        50% { -webkit-transform: skewY(-30deg); }
+        75% { -webkit-transform: skewX(30deg); }
+        to { -webkit-transform: skewX(-30deg); }
+      }
+      @-keyframes skew
+      {
+        from { -webkit-transform: skewY(0deg); }
+        25% { -webkit-transform: skewY(30deg); }
+        50% { -webkit-transform: skewY(-30deg); }
+        75% { -webkit-transform: skewX(30deg); }
+        to { -webkit-transform: skewX(-30deg); }
+      }
+
+ 
+.grid1{
+    display: grid;
+    width: 600px;
+    height: 700px;
+
+      margin-top: 200px;
+   margin: auto;
+     grid-template-rows: 700px 700px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+ 
+}
+
+.griditem{
+
+
+box-shadow: rgba(0, 0, 0, 0.35) 1px 3px 4px;
+transition: 0.5s ease-out;
+border: 5px solid blue;
+background: none;
+overflow: hidden;
+
+}
+
+.flexcontent{
+  height: 400px;
+    width: 950px;
+display: flex;
+
+    border: 1px solid black;
+  flex-wrap: wrap;
+    margin: auto;
+    margin-top: 20px;
+
+}
+
+.flexitem1{
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+  margin: auto;
+
+}
+
+.imgcontainer{
+    display: flex;
+justify-content: center;
+align-items: center;
+height: 300px;
+
+border: 1px solid black;
+
+}
+img{
+    height:150px;
+    width: 150px;
+    margin-left: 20px;
+    transition: 0.3s ease-out;
+}
+img:hover{
+    transform:scale(120%);
+       transition: 0.3s ease-in;
+}
+
+.grid2{
+
+    display: grid;
+    width: 600px;
+    height: 700px;
+  
+    margin: auto;
+      margin-top: 200px;
+    grid-template-rows: 700px 700px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    border: 1px solid black;
+    
+}
+
+
+
+
+    
+
+
+
+
+
+</style>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1 class="lab51">css3 features</h1>
+<div class="lab52main">
+<div class="lab521"></div>
+<div class="lab522"></div>
+<div class="lab523"></div>
+
+</div>
+
+
+<div class="lab52main">
+<div class="lab531"></div>
+<div class="lab532"></div>
+<div class="lab533"></div>
+
+</div>
+<div class="lab54main">
+<div class="lab511">
+</div>
+
+</div>
+<div class="lab54main">
+<div class="lab551">
+</div>
+</div>
+
+<div class="lab54main">
+<div class="lab552">
+</div>
+
+
+
+  <div class = "box skew">
+      <div class = "textbox">Skewing Text</div>
+</div>
+  </div>
+  </div>
+  
+  <div class="lab54main">
+<div class="lab6">
+
+</div>
+</div>
+   <div class="grid1">
+       <div class="griditem"> text 1</div>
+       <div class="griditem"> text 2</div>
+   </div>
+      
+
+    <div class="flexcontent"><div class="flexitem1">item1</div>
+<div class="flexitem1" > item2</div>
+<div class="flexitem1">item3</div>
+<div class="flexitem1">item4</div>
+<div class="flexitem1">item5</div>
+    <div class="flexitem1">item6</div></div>
+
+
+<div class="imgcontainer">
+    <img class="img1" src="https://i1.trekearth.com/photos/90656/copy_of_dsc_0472.jpg" alt="">
+<img src="https://m.media-amazon.com/images/I/51r3I-PNK9L._AC_SS450_.jpg" alt="">
+<img class="img2" src="https://lite-images-i.scdn.co/image/ab67706c0000da8473ff8c2ef34fe94926ba1815" alt="">
+<img class="img3" src="https://3.imimg.com/data3/GR/UX/MY-10251099/img-20140425-wa0038-250x250.jpg" alt="">
+<img class="img4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEEgZ9_AHkf804L3N04z1jXxb1WKeCwRtEJg&usqp=CAU" alt="">
+<img class="img5" src="https://liveonlineradio.net/wp-content/uploads/2018/01/Radio-Amra.jpg" alt="">
+
+
+
+</div>
+   <div class="grid2">
+       <div class="griditem"> text 1</div>
+       <div class="griditem"> text 2</div>
+         <div class="griditem"> text 1</div>
+       <div class="griditem"> text 2</div>
+   </div>
+
+
+</div>
+</body>
+</html>

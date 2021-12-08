@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .container {
+      height: 80px;
+      background: black;
+      width: 200%;
+      display: flex;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial;
+      color: white;
+    }
+    ul {
+      color: white;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+    ul li {
+      float: left;
+      width: 180px;
+      height: 80px;
+      line-height: 80px;
+      text-align: center;
+      margin-right: 45px;
+    }
+    ul li a {
+      text-decoration: none;
+      color: white;
+      display: block;
+    }
+    .top > li:hover,
+    .top > li:active {
+      border-bottom: 3px solid red;
+    }
+
+    ul li ul li {
+      display: none;
+    }
+
+    ul li ul li a {
+      background-color: gray;
+    }
+    ul li:hover ul li {
+      display: block;
+    }
+
+    .kok > li {
+      border-bottom: 1px solid bisque;
+    }
+    .kok > li:hover {
+      border-bottom: 1px solid blue;
+    }
+  </style>
+  <head>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="container">
+      <ul class="top">
+        <li><a href="index.html">Нүүр</a></li>
+        <li><a href="aboutme.html">Миний тухай</a></li>
+        <li><a href="hobby.html">Хобби</a></li>
+        <li>
+          <a href="area.html">Нутаг</a>
+          <ul class="kok">
+            <li><a href="picture.html">Зураг</a></li>
+            <li><a href="news.html">Түүх & Мэдээлэл</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="music.html">Дуу</a>
+          <ul class="kok">
+            <li><a href="video.html">Клип</a></li>
+            <li><a href="hitsongs.html">Хит дуу</a></li>
+            <li><a href="newsongs.html">Шинэ дуу</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+  <style>
+    .background {
+      background-color: gray;
+      padding: 30px;
+    }
+    .out {
+      background-color: green;
+      height: 300px;
+      width: 300px;
+    }
+    .in {
+      background-color: red;
+      position: relative;
+      height: 50px;
+      width: 50px;
+      left: 10px;
+      top: 10px;
+    }
+    .out2 {
+      background-color: green;
+      height: 300px;
+      width: 300px;
+    }
+    .in2 {
+      background-color: red;
+      position: relative;
+      height: 50px;
+      width: 50px;
+      left: -10px;
+      top: -10px;
+    }
+    .out3 {
+      background-color: green;
+      position: relative;
+      height: 300px;
+      width: 300px;
+    }
+    .in3 {
+      background-color: red;
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      right: 10px;
+      bottom: 10px;
+    }
+    .out4 {
+      background-color: green;
+      position: relative;
+      height: 300px;
+      width: 300px;
+    }
+    .in4 {
+      background-color: red;
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      bottom: 0px;
+    }
+    .out5 {
+      background-color: green;
+      height: 300px;
+      width: 300px;
+    }
+    .in5 {
+      background-color: red;
+      position: fixed;
+      height: 50px;
+      width: 50px;
+      top: 0px;
+      left: 0px;
+    }
+    .out6 {
+      background-color: green;
+      height: 300px;
+      width: 300px;
+    }
+    .in6 {
+      background-color: red;
+      position: absolute;
+      height: 50px;
+      width: 50px;
+      top: 50px;
+      left: 350px;
+    }
+  </style>
+  <head>
+    <title>Position</title>
+  </head>
+  <body class="background">
+    <!--
+	<div class="out">
+		<div class="in"></div>
+	</div>
+-->
+
+    <!--	
+	<div class="out2">
+		<div class="in2"></div>
+	</div>
+-->
+
+    <!--	
+	<div class="out3">
+		<div class="in3"></div>
+	</div>
+-->
+
+    <!--
+	<div class="out4">
+		<div class="in4"></div>
+	</div>
+-->
+
+    <!--
+	<div class="out5">
+		<div class="in5"></div>
+	</div>
+-->
+
+    <!--
+	<div class="out5">
+		<div class="in5"></div>
+	</div>
+-->
+    <div class="out6">
+      <div class="in6"></div>
+    </div>
+  </body>
+</html>
