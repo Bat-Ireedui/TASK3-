@@ -1,0 +1,171 @@
+<script> var radius = window.prompt("Оруулах радиус:"); document.writeln("<h1>Area: "+ca(radius)+"</h1>"); function ca(r){ return r*r*Math.PI; }
+</script>
+
+
+
+
+2.
+<script> var value = window.prompt("Зогссон цаг:"); document.writeln("<h1>"+uneTootsoh(value)+"</h1>"); function uneTootsoh(v){ var une=0; if(v<=3){ une=5000; return une; }else if(v>3){ v-=3; une=5000; for(var i=1;i<=v;i++){ une+=1000; } }if(une>23000){ une=23000; } return une; } </script>
+
+
+
+
+3. function zai(x1,y1,x2,y2){
+return Math.sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1))
+}
+
+
+
+4. a) function randomNumber { return Math.floor((Math.random() * 2) + 1); }
+b) function randomNumber2 { return Math.floor((Math.random() * 100) + 1); }
+c) function randomNumber3 { return Math.floor((Math.random() * 9)); }
+d) function randomNumber4 { Math.floor((Math.random() * 112) + 1000); }
+r) function randomNumber5 { Math.floor((Math.random() * 3) - 1); }
+f) function randomNumber6 { Math.floor((Math.random() * 14) - 3); }
+
+
+
+
+
+
+5.
+function integerPower(base, exponent ){ var exp=base; if(exponent==0){ return 1; }else if(exponent==1){ return base; }else{ for(var i =2;i<=exponent;i++){ base*=exp; } } return base; }
+
+
+
+6.
+function urjegdehuun(huv, too ){ if(too%huv==0){ return true; }else{ return false; } }
+
+
+
+7.
+var garnaasoruulah;{ garnaasoruulah=prompt(); document.writeln(isEven(garnaasoruulah)); } function isEven(too){ if(too%2==0){ return true; }else{ return false; } }
+
+
+
+8.
+var a = x;
+var b = y;
+var c= a/b;
+
+
+
+var a = x;
+var b = y;
+var c = a%b;
+
+
+
+
+
+
+
+9.
+
+
+
+
+
+function c(F){ return 5.0 / 9.0 *(F- 32 );
+
+
+
+function f(C){ return 9.0 / 5.0 *C+ 32; }
+
+
+
+
+
+10.
+
+
+
+
+
+var unit=prompt(Farenheit - Celcius or Celcius to Farenheit "); var value=prompt(); if(unit=='F'){ document.writeln(c(value)); }else if(unit=='C'){ document.writeln(f(value)); }else{ document.writeln("buruu"); } function f(C){ return 9.0 / 5.0 *C+ 32; } function c(F){ return 5.0 / 9.0 *(F- 32 ); }
+
+
+
+
+
+10.
+
+
+
+
+
+function minimum3(z,x,c)
+
+
+
+{ var min=Math.min(z,x); return Math.min(min,c); }
+
+
+
+
+
+
+
+11.
+
+
+
+
+
+function qualityPoints(value)
+
+
+
+{ if(value<60){ document.writeln("F"); }else if(value<70){ document.writeln("D"); }else if(value<80){ document.writeln("C"); }else if(value<90){ document.writeln("B"); }else if(value<100){ document.writeln("A"); }else{ document.writeln("Aldaatai dun"); } }
+
+
+
+
+
+12.
+
+
+
+<!DOCTYPE html>
+
+
+
+<html>
+<head>
+<meta charset = "utf-8">
+
+
+
+</head>
+
+
+
+<body>
+<button id="button" type="button">ZOOS</button>
+<p id="result"></p>
+<script>
+let button = document.getElementById("button")
+let result = document.getElementById("result")
+
+
+
+
+function Click(e) {
+let num = Math.random();
+
+
+
+if (num < 0.5) {
+result.innerHTML="SULD";
+} else {
+result.innerHTML="TOO";
+}
+}
+
+
+
+button.addEventListener("click", Click);
+
+</script>
+</body>
+</html>
