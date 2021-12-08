@@ -1,0 +1,142 @@
+1.
+a) Массив-д хадгалдаг.
+b) p массив = p[0] p[1] p[2] p[3]
+c) 2 хэмжээст хүснэгтэд эхний индексээр хүснэгтийн мөр, хоёр дахь индексээр
+хүснэгтийн багана-г тодорхойлдог.
+d) mxn хүснэгт нь 3 мөр, 10 баганатай байх ба нийт 30 элементүүдийг
+агуулна.
+e) d хүснэгтийн 3-р мөр, 5-р баганийн элементийн нэр бол d[3][5] юм.
+
+
+2.
+a) бруу, элементийн хаягт заана
+b) үнэн
+c) үнэн
+d) буруу, гарнаас утга авна
+e) үнэн
+
+
+3a.
+		a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+			document.writeln(a[7]);
+
+
+3b.
+		g = [8, 8, 8, 8, 8,]
+
+
+
+3c.
+	a = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+		sum = 0;
+		for(i=0; i<a.length; i++)
+			sum = sum + a[i];
+		
+		document.writeln("niilber: "+sum);
+
+3d.
+	a = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+			b = [];
+			for(i=0; i<a.length; i++)
+				b[i] = a[i];
+
+			document.writeln(b);
+3e.
+W.sort(function(a, b){return a-b});
+		    min=W[0];
+		    max=W[98];
+	document.writeln(min=W[0])
+
+4.a)
+var t=[2][3]
+b)2
+c)3
+d)6
+e) t[0][0] t[0][1], t[0][2]
+f) t[0][2] t[1][2]
+g)t[0][1]=0;
+h) t[0][0]=0; t[0][1]=0; t[0][2]=0; t[1][0]=0; t[1][1]=0; t[1][2]=0;
+i)
+	min=t[0][0];
+	for(var i=0;i<2;i++){
+	for(var j=0;j<3;j++)
+{
+	If(min < t[i][j]) min= t[i][j];
+}
+
+} 	document.writeln(min)
+
+w.sort(function(a, b){return a-b});
+		    min=T[0];
+	document.writeln(T[0])
+
+j)document.writeln(T[0]);
+k)for(let i=0;i<n;i++){
+            for(let j=0;j<m;j++){
+                document.writeln(T[i][j]+” ”);
+} 
+document.writeln(”\n”);
+}
+        i) for(let i=n-1;i>=0;i++){
+            for(let j=n-1;j>=0;j++){
+                document.writeln(T[i][j]+” ”);
+} 
+document.writeln(”\n”);
+}
+
+
+6.
+
+	var a=[];
+		for (var i = 0; i<10; i++) {
+			a[i] = 0;	
+		}
+
+	var b=[];
+		for (var i = 0; i<15; i++) {
+			b[i] = Math.floor(Math.random() * 100) + 1;
+		}
+		for (var i = 0; i<15; i++) {
+			b[i]+=1;
+		}
+
+	var c='';
+		for (var i = 0; i<5; i++) {
+			c+=bestScores[i]+'';
+		}
+		document.writeln(c);
+
+
+
+7. 
+
+
+	const array = new Array();
+  for(let i=0; i<10; i++){
+    var too= window.promt();
+      if(!array.includes(too,0)){
+        array[i]=too;
+        document.writeln(array[i]);
+      }
+  }}
+
+	
+
+
+8.
+
+<table id="dice">
+		<tbody>
+			<tr></tr>
+		</tbody>
+	</table>
+	<script>	function dice() {
+			var dice, egn;
+			var a=[];
+			egn = document.querySelector('#dice > tbody tr');
+			for (var i = 0; i < 36; i++) {
+				a[i]=(Math.floor(Math.random() * 6) + 1) + (Math.floor(Math.random() * 6) + 1);
+				egn.innerHTML+= '<td>'+a[i]+'</td>';
+			}
+		};
+		dice();</script>
